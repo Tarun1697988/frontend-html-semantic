@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <header class="page__header">
+    <h1 class="page__title">Основы HTML</h1>
+    <nav class="page__navigation">
+      <ol class="page__list">
+        <li class="page__item"><a class="page__link" href="#Что такое HTML на самом деле?">Что такое HTML на самом деле?</a>
+          <ul class="page__list">
+            <li class="page__item"><a class="page__link" href="#Анатомия HTML элемента">Анатомия HTML элемента</a></li>
+            <li class="page__item"><a class="page__link" href="#Вложенные элементы">Вложенные элементы</a></li>
+            <li class="page__item"><a class="page__link" href="#Пустые элементы">Пустые элементы</a></li>
+            <li class="page__item"><a class="page__link" href="#Анатомия HTML документа1">Анатомия HTML документа</a></li>
+          </ul>
+        </li>
+        <li class="page__item"><a class="page__link" href="#Краткое описание элемента">Краткое описание элемента &lt;html&gt;&lt;/html&gt</a>
+          <ul class="pahe__list">
+            <li class="page__item"><a  class="page__link" href="#Атрибуты">Атрибуты</a></li>
+          </ul>
+        </li>
+        <li class="page__item"><a  class="page__link" href="#Заключение">Заключение</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main class="page__main">
+    <article class="page__article">
+      <q class="page__citation">
+        HTML (HypertextMarkupLanguage) - это код, который используется для структурирования и отображения веб-страницы и ее контента.
+        Например, контент может быть структурирован внутри множества параграфов, маркированных списков или с использованием
+        изображений и таблиц данных. Или это может быть даже изображения или таблицы данных. Как видно из названия, эта статья
+        даст вам базовое понимание HTML и его функций.
+      </q>
+      <section class="page__section" id="Что такое HTML на самом деле?">
+        <h2 class="page__tittle">Что такое HTML на самом деле?</h2>
+        <p class="page__description">HTML не является языком программирования; это язык разметки, и используется, чтобы сообщать
+          вашему браузеру как отображать веб-страницы, которые вы посещаете. Он может быть сложным или простым, в зависимости
+          от того, как хочет веб-дизайнер. HTML состоит из ряда элементов, которые вы используете, чтобы вкладывать или оборачивать
+          различные части контента, чтобы заставить контент отображаться или действовать определенным образом. Ограждающие
+          теги могут сделать слово или изображение ссылкой на что-то еще, могут сделать слова курсивом, сделать шрифт больше
+          или меньше и так далее. Например, возьмем следующую строку контента:</p>
+        <code class="page__code-example">My cat is very grumpy</code>
+        <p class="page__description">Если мы хотим строку стоящую саму по себе, мы можем указать, что это параграф, заключая
+          ее в тег параграфа (&lt;p&gt;) элементом:</p>
+        <code class="page__code-example">&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+        <section id="Анатомия HTML элемента">
+          <h3 class="page__title">Анатомия HTML элемента</h3>
+          <p class="page__description">Давайте рассмотрим &lt;p&gt; элемент параграфа более подробно.</p>
+          <img class="page__img" src="images/grumpy-cat-small.png" alt="элемент параграфа">
+          <ol class="page__list">
+            <li class="page__item"><strong>Открывающий тег</strong>: Состоит из имени этого элемента (в данном случае, p),
+              заключенного в открывающие и закрывающие угловые скобки. Указывает, где элемент начинается или начинает действовать
+              — в данном случае, где начинается параграф. </li>
+            <li class="page__item"><strong>Закрывающий тег</strong>: Это тоже самое, что и открывающий тег, кроме того, что
+              он включает в себя косую черту перед именем элемента. Указывает, где элемент заканчивается — в данном случае,
+              где заканчивается параграф. Отсутствие закрывающего тега является одной из наиболее распространенных ошибок
+              начинающих и может приводить к странным результатам. </li>
+            <li class="page__item"><strong>Контент</strong>: Это контент элемента, который в данном случае является просто
+              текстом.
+            </li>
+            <li class="page__item"><strong>Элемент:</strong> Открывающий тег, плюс закрывающий тег, плюс контент, равняется
+              элементу.
+            </li>
+          </ol>
+          <p class="page__description">
+            Элементы также могут иметь атрибуты, которые выглядят так:
+          </p>
+          <img class="page__img" src="images/grumpy-cat-attribute-small.png" alt="атрибуты элементов">
+          <p class="page__description">
+            <i>Атрибуты</i> содержат дополнительную информацию об элементе, которую вы не хотите показывать в фактическом
+            контенте. В данном случае, атрибут класса позволяет дать элементу идентификационное имя, которое может позже
+            использоваться для целевого элемента с информацией о стиле и прочих вещах.
+          </p>
+          <p class="page__description">Атрибут всегда должен иметь:</p>
+          <ol class="page__list">
+            <li class="page__item">Пространство между ним и именем элемента (или предыдущим атрибутом, если элемент уже имеет
+              один или несколько атрибутов.)</li>
+            <li class="page__item">Имя атрибута, а затем знак равенства</li>
+            <li class="page__item">Открывающие и закрывающие кавычки, обернутые вокруг значения атрибута</li>
+          </ol>
+        </section>
+
+        <section id="Вложенные элементы">
+          <h3 class="page__title">Вложенные элементы</h3>
+          <p class="page__description">Вы также можете располагать элементы внутри других элементов — это называется <strong>вложением</strong>.
+            Если мы хотим заявить, что наша кошка ОЧЕНЬ раздражена, мы можем обернуть слово "very" в &lt;strong&gt; элемент,
+            это означает, что слово должно быть сильно акцентированно:</p>
+          <code class="page__code-example">&lt;p&gt;My cat is &lt;p&gt;very&lt;strong&gt; grumpy.&lt;/p&gt;</code>
+          <p class="page__description">Вы также должны убедиться, что ваши элементы вложены правильно: в примере выше мы
+            открыли первым &lt;p&gt; элемент, затем &lt;strong&gt; элемент, потом мы должны закрыть сначала &lt;strong&gt;
+            элемент, затем &lt;p&gt;. Приведенноениженеверно:</p>
+          <code class="page__code-example">&lt;p&gt;My cat is &lt;strong&gt;very grumpy. >&lt;/p&gt;&lt;/strong&gt;</code>
+          <p class="page__description">Элементы должны открываться и закрываться правильно, поэтому они явно внутри или снаружи
+            друг друга. Если они перекрываются как в примере выше, тогда ваш веб-браузер будет пытаться сделать наилучшее
+            предположение на то, что вы пытались сказать, и вы также можете получить непредсказуемые результаты. Так что
+            не стоит этого делать!</p>
+        </section>
+        <section id="Пустые элементы">
+          <h3 class="page__title">Пустые элементы</h3>
+          <p class="page__description">Некоторые элементы не имеют контента, и называются пустыми элементами. Возьмем &lt;img&gt;
+            элемент, который мы уже имеем в нашем HTML: </p>
+          <code class="page__code-example">&lt;imgsrc="images/firefox-icon.png" alt="My test image"&gt;&lt;/imgsrc&gt;</code>
+          <p class="page__description">Он содержит два атрибута, но не имеет закрывающего </img> тега, и никакого внутреннего
+            контента. Это потому, что элемент изображения не оборачивает контент для влияния на него. Его целью является
+            вставка изображения в HTML страницу, и оказывается в нужном месте.</p>
+        </section>
+        <section id="Анатомия HTML документа1">
+          <h3 class="page__title">Анатомия HTML документа</h3>
+          <p class="page__description">Это завершает основы отдельных HTML элементов, но они не очень полезны сами по себе.
+            Теперь мы будем смотреть, как отдельные элементы объединяются в целую HTML страницу. Давайте вернемся к коду,
+            который мы вкладывали в наш index.html пример (с которым мы в первые встретились в статье Работа с файлами):</p>
+          <p>Здесь мы имеем:</p>
+          <ul class="page__list">
+            <li class="page__item">
+              <!DOCTYPEhtml>— доктайп. В прошлом, когда HTML был молод (около 1991/2), доктайпы должны были выступать в качестве ссылки
+              на набор правил, которым HTML страница должна была следовать, чтобы считаться хорошим HTML, что могло означать
+              автоматическую проверку ошибок и другие полезные вещи. Однако в наши дни, никто не заботится об этом, и это
+              на самом деле просто исторический артефакт, который должен быть включен для того, что бы все работало правильно.
+              На данный момент, это все, что вам нужно знать.
+            </li>
+            <li class="page__item"><strong>&lt;html&gt;&lt;/html&gt;</strong>. Этот элемент оборачивает весь контент на всей
+              странице, и иногда известен как корневой элемент. </li>
+            <li class="page__item"><strong>&lt;head&gt;&lt;/head&gt;</strong>. Этот элемент выступает в качестве контейнера
+              для всего, чего вы пожелаете включить на HTML страницу, но не являющегося контентом, который вы показываете
+              зрителям ваших страниц. К ним относятся такие вещи, как ключевые слова и описание страницы, которые вы хотите,
+              чтобы появлялись в результатах поиска, CSS стили нашего контента, декларация набора символов, и другое. </li>
+            <li class="page__item"><strong>&lt;body&gt;&lt;/body&gt;</strong>. В нем содержится весь контент, который вы
+              хотите показать пользователям, когда они посещают вашу страницу, будь это текст, изображения, видео, игры,
+              проигрываемые аудио дорожки или что-то еще. </li>
+            <li class="page__item"><strong>&lt;metacharset="utf-8"&gt;</strong> — этот элемент устанавливает utf-8 кодировку
+              вашего документа, которая включает в себя большинство символов из всех известных человечеству языков. По сути,
+              теперь документ может обрабатывать любой текстовый контент, который вы в него вложите. Нет причин, чтобы не
+              устанавливать её, так как это может помочь избежать некоторых проблем в дальнейшем. </li>
+            <li class="page__item"><strong>&lt;title&gt;&lt;/title&gt;</strong> — это устанавливает заголовок для вашей страницы,
+              который является названием, появляющимся на вкладке браузера загружаемой страницы, и используется для описания
+              страницы, когда вы добавляете ее в закладки/избранное. </li>
+          </ul>
+        </section>
+      </section>
+      <section id="Краткое описание элемента">
+        <h2 class="page__title">Краткое описание элемента &lt;html&gt;&lt;/html&gt;</h2>
+        <p class="page__description">Корневой элемент HTML-документа (<strong>&lt;html&gt;</strong>). Все остальные элементы
+          должны быть потомками этого элемента.</p>
+        <table class="page__table">
+          <tr class="table__row">
+            <th>Contentcategories</th>
+            <td>None.</td>
+          </tr>
+          <tr class="table__row">
+            <th>Допустимое содержимое</th>
+            <td>Один элемент &lt;head&gt;, а за ним — один элемент &lt;body&gt;</td>
+          </tr>
+          <tr class="table__row">
+            <th>Tagomission</th>
+            <td>The start tag may be omitted if the first thing inside the &lt;html&gt; element is not a comment. The end
+              tag may be omitted if the &lt;html&gt; element is not immediately followed by a comment, and it contains a
+              &lt;bod&gt; element either that is not empty, or whose start tag is present.
+            </td>
+          </tr>
+          <tr class="table__row">
+            <th>Допустимые родительские элементы</th>
+            <td>As the root element of a document, or wherever a subdocument fragment is allowed in a compound document.</td>
+          </tr>
+          <tr class="table__row">
+            <th>Интерфейс DOM</th>
+            <td>HTMLHtmlElement</td>
+          </tr>
+        </table>
+
+        <section id="Атрибуты">
+          <h3 class="page__title">Атрибуты</h3>
+          <dl>
+            <dt>manifest</dt>
+            <dd>Specifies the URI of a resource manifest indicating resources that should be cached locally. "See Using the
+              application cache" for details.</dd>
+            <dt>version</dt>
+            <dd>Specifies the version of the HTML Document Type Definition that governs the current document. This attribute
+              is not needed, because it is redundant with the version information in the document type declaration.</dd>
+            <dt>xmlns</dt>
+            <dd>Specifies the XML Namespace of the document. Default value is "http://www.w3.org/1999/xhtml". This is required
+              in XHTML, and optional in HTML5.</dd>
+          </dl>
+        </section>
+      </section>
+
+      <section id="Заключение">
+        <h2 class="page__title">Заключение</h2>
+        <p>Полные версии статей можно найти по ссылкам <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">Основы HTML</a> и <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/html" target="_blank">Элемент&lt;html&gt;&lt;/html&gt;</a></p>
+      </section>
+    </article>
+  </main>
+
+
+</body>
+
+</html>
