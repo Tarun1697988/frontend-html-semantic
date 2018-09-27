@@ -13,15 +13,15 @@
     <h1 class="page__title">Основы HTML</h1>
     <nav class="page__navigation">
       <ol class="page__list">
-        <li class="page__item"><a class="page__link" href="#Что такое HTML на самом деле?">Что такое HTML на самом деле?</a>
+        <li class="page__item"><a class="page__link" href="#Что-такое-HTML-на-самом-деле?">Что такое HTML на самом деле?</a>
           <ul class="page__list">
-            <li class="page__item"><a class="page__link" href="#Анатомия HTML элемента">Анатомия HTML элемента</a></li>
-            <li class="page__item"><a class="page__link" href="#Вложенные элементы">Вложенные элементы</a></li>
-            <li class="page__item"><a class="page__link" href="#Пустые элементы">Пустые элементы</a></li>
-            <li class="page__item"><a class="page__link" href="#Анатомия HTML документа1">Анатомия HTML документа</a></li>
+            <li class="page__item"><a class="page__link" href="#Анатомия-HTML-элемента">Анатомия HTML элемента</a></li>
+            <li class="page__item"><a class="page__link" href="#Вложенные-элементы">Вложенные элементы</a></li>
+            <li class="page__item"><a class="page__link" href="#Пустые-элементы">Пустые элементы</a></li>
+            <li class="page__item"><a class="page__link" href="#Анатомия-HTML-документа1">Анатомия HTML документа</a></li>
           </ul>
         </li>
-        <li class="page__item"><a class="page__link" href="#Краткое описание элемента">Краткое описание элемента &lt;html&gt;&lt;/html&gt</a>
+        <li class="page__item"><a class="page__link" href="#Краткое-описание-элемента">Краткое описание элемента &lt;html&gt;&lt;/html&gt;</a>
           <ul class="pahe__list">
             <li class="page__item"><a  class="page__link" href="#Атрибуты">Атрибуты</a></li>
           </ul>
@@ -38,7 +38,7 @@
         изображений и таблиц данных. Или это может быть даже изображения или таблицы данных. Как видно из названия, эта статья
         даст вам базовое понимание HTML и его функций.
       </q>
-      <section class="page__section" id="Что такое HTML на самом деле?">
+      <section class="page__section" id="Что-такое-HTML-на-самом-деле?">
         <h2 class="page__tittle">Что такое HTML на самом деле?</h2>
         <p class="page__description">HTML не является языком программирования; это язык разметки, и используется, чтобы сообщать
           вашему браузеру как отображать веб-страницы, которые вы посещаете. Он может быть сложным или простым, в зависимости
@@ -50,7 +50,7 @@
         <p class="page__description">Если мы хотим строку стоящую саму по себе, мы можем указать, что это параграф, заключая
           ее в тег параграфа (&lt;p&gt;) элементом:</p>
         <code class="page__code-example">&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
-        <section id="Анатомия HTML элемента">
+        <section id="Анатомия-HTML-элемента">
           <h3 class="page__title">Анатомия HTML элемента</h3>
           <p class="page__description">Давайте рассмотрим &lt;p&gt; элемент параграфа более подробно.</p>
           <img class="page__img" src="images/grumpy-cat-small.png" alt="элемент параграфа">
@@ -87,7 +87,7 @@
           </ol>
         </section>
 
-        <section id="Вложенные элементы">
+        <section id="Вложенные-элементы">
           <h3 class="page__title">Вложенные элементы</h3>
           <p class="page__description">Вы также можете располагать элементы внутри других элементов — это называется <strong>вложением</strong>.
             Если мы хотим заявить, что наша кошка ОЧЕНЬ раздражена, мы можем обернуть слово "very" в &lt;strong&gt; элемент,
@@ -102,16 +102,16 @@
             предположение на то, что вы пытались сказать, и вы также можете получить непредсказуемые результаты. Так что
             не стоит этого делать!</p>
         </section>
-        <section id="Пустые элементы">
+        <section id="Пустые-элементы">
           <h3 class="page__title">Пустые элементы</h3>
           <p class="page__description">Некоторые элементы не имеют контента, и называются пустыми элементами. Возьмем &lt;img&gt;
             элемент, который мы уже имеем в нашем HTML: </p>
           <code class="page__code-example">&lt;imgsrc="images/firefox-icon.png" alt="My test image"&gt;&lt;/imgsrc&gt;</code>
-          <p class="page__description">Он содержит два атрибута, но не имеет закрывающего </img> тега, и никакого внутреннего
+          <p class="page__description">Он содержит два атрибута, но не имеет закрывающего &lt;/img&gt; тега, и никакого внутреннего
             контента. Это потому, что элемент изображения не оборачивает контент для влияния на него. Его целью является
             вставка изображения в HTML страницу, и оказывается в нужном месте.</p>
         </section>
-        <section id="Анатомия HTML документа1">
+        <section id="Анатомия-HTML-документа1">
           <h3 class="page__title">Анатомия HTML документа</h3>
           <p class="page__description">Это завершает основы отдельных HTML элементов, но они не очень полезны сами по себе.
             Теперь мы будем смотреть, как отдельные элементы объединяются в целую HTML страницу. Давайте вернемся к коду,
@@ -119,7 +119,7 @@
           <p>Здесь мы имеем:</p>
           <ul class="page__list">
             <li class="page__item">
-              <!DOCTYPEhtml>— доктайп. В прошлом, когда HTML был молод (около 1991/2), доктайпы должны были выступать в качестве ссылки
+              &lt;!DOCTYPEhtml&gt;— доктайп. В прошлом, когда HTML был молод (около 1991/2), доктайпы должны были выступать в качестве ссылки
               на набор правил, которым HTML страница должна была следовать, чтобы считаться хорошим HTML, что могло означать
               автоматическую проверку ошибок и другие полезные вещи. Однако в наши дни, никто не заботится об этом, и это
               на самом деле просто исторический артефакт, который должен быть включен для того, что бы все работало правильно.
@@ -144,7 +144,7 @@
           </ul>
         </section>
       </section>
-      <section id="Краткое описание элемента">
+      <section id="Краткое-описание-элемента">
         <h2 class="page__title">Краткое описание элемента &lt;html&gt;&lt;/html&gt;</h2>
         <p class="page__description">Корневой элемент HTML-документа (<strong>&lt;html&gt;</strong>). Все остальные элементы
           должны быть потомками этого элемента.</p>
